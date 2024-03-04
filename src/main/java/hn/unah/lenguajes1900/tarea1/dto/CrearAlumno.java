@@ -20,7 +20,7 @@ public class CrearAlumno {
 
     public String crear(String numeroCuenta, String nombre, String apellido, String correo){
         CrearAlumno nvoAlumno = new CrearAlumno();
-        listaAlumnos.add(nvoAlumno);
+        //listaAlumnos.add(nvoAlumno);
         return "Alumno creado exitosamente";
     }
 
