@@ -15,18 +15,18 @@ public class CrearAlumno {
     private String nombre;
     private String apellido;
     private String correo;
+    private List<CrearClase> lClases = new ArrayList<>();
     //private String[] listaClases;
-    private List<String> listaAlumnos = new ArrayList<>();
-
-    public String crear(String numeroCuenta, String nombre, String apellido, String correo){
-        CrearAlumno nvoAlumno = new CrearAlumno();
-        //listaAlumnos.add(nvoAlumno);
-        return "Alumno creado exitosamente";
-    }
+   
 
    
     public String toString(){
         return "Cuenta: " + this.numeroCuenta + "\n" + "Nombre: " + this.nombre + "\n"
         + "Apellido: " + this.apellido + "\n" + "Correo: " + this.correo /* + "\n" + "Clases: " +  this.listaClases*/ ; 
     }
+
+    public void AgregarClases(CrearClase clase){
+        lClases.add(clase);
+    }
 }
+
